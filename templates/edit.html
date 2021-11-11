@@ -21,13 +21,13 @@
       <textarea name="body" placeholder="{{posts.body}}" required></textarea>
       <br />
       <input id="uploadfile" type="file" name="image" />
+      <br />
       {% if posts.image.url %}
       <img class="Image" src="{{posts.image.url}}" />
-      <!-- style="width: 370px; height: 370px" -->
 
       {% endif %}
       <br />
-      <input id="fumi" type="submit" value="Cancel" />
+      <a href="{% url 'index' %}" id="fumi1">Cancel</a>
       <input id="fumi" type="submit" value="Update" />
     </form>
   </section>
